@@ -119,11 +119,11 @@ def main():
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Parametize Perceptron Neural Network")
-    parser.add_argument('--batch_size', type=int, default='128', help='How many string train on at a time')
+    parser = argparse.ArgumentParser(description="Parametized Perceptron Neural Network")
+    parser.add_argument('--batch_size', type=int, default='128', help='How much data train on at a time')
     parser.add_argument('--steps', type=int, default='500', help='How many steps to take in the training')
-    parser.add_argument('--learning_rate', type=float, default='0.1', help='How many steps to take in the training')
-    parser.add_argument('--model_file', type=str, default='model.tfl', help='Path to save the model file, will be loaded if present or created')
+    parser.add_argument('--learning_rate', type=float, default='0.1', help='How fast the learning rate is')
+    parser.add_argument('--model_file', type=str, default='model.tfl', help='Path to save the model file')
     parser.add_argument('--data_path', type=str, default='/tmp/data', help='Path to save training data')
     parser.add_argument('--hidden_layer_num', type=int, default=2, help='Number of hidden layers')
     parser.add_argument('--nodes_size', type=int, default=256, help='Number of nodes in each layers')
